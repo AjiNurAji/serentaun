@@ -1,0 +1,1 @@
+vc-domain-verify=serentaun.com,24a914ce2889aba0f133
