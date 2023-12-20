@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
 
 *, *::after, *::before {
-  font-family: 'Poppins', 'Nunito', sans-serif !important;
+  font-family: 'Kaisei HarunoUmi', 'Nunito', sans-serif !important;
 }
 
 .font-body {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Kaisei HarunoUmi', sans-serif !important;
   font-weight: 400 !important;
   color: var(--color-gray);
 }
