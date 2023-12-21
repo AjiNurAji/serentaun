@@ -274,15 +274,6 @@ a {
   background: transparent;
 }
 
-.menu-button.active .button-menu {
-  border: 1px solid var(--color-green);
-}
-
-.menu-button.active .button-menu svg {
-  stroke: var(--color-green);
-}
-
-.menu-button.active .button-menu:hover,
 .button-menu:hover {
   border-color: var(--color-gray);
 }
@@ -295,6 +286,19 @@ a {
   height: 60%;
   width: 50%;
   stroke: var(--color-white);
+}
+
+.load-more {
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  padding: 10px 15px !important;
+  border-radius: 999px !important;
+  -webkit-border-radius: 999px !important;
+  -moz-border-radius: 999px !important;
+  -ms-border-radius: 999px !important;
+  -o-border-radius: 999px !important;
+  background: var(--color-green);
 }
 
 /* preload style */
@@ -387,7 +391,7 @@ a {
   --gap: 1rem;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-columns: repeat(--columns, 1fr);
   grid-gap: var(--gap);
   padding: 2rem;
 }
