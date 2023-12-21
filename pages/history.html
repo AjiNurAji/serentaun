@@ -92,7 +92,7 @@
     <!-- hero -->
     <section class="py-5 position-relative overflow-hidden">
         <div class="container pt-5 ">
-            <div class="d-flex justify-content-between w-100 mb-3 ">
+            <div class="d-flex justify-content-between w-100 mb-3 top-section ">
                 <h1 class="w-50 custom-hero-title-d overflow-hidden">A place of history and tradition.</h1>
                 <img class="img-fluid img-thumb-history object-fit-cover rounded-4 mt-3"
                     src="../assets/images/history/histori1.webp" alt="history of serentaun">
@@ -196,13 +196,26 @@
     <script src="../assets/js/nav.js"></script>
     <script>
         const text = new SplitType(".custom-hero-title-d");
-
+        gsap.to(".custom-hero-title-d", {
+            delay: 0.3,
+            opacity: 1
+        })
         gsap.to(".char", {
             y: 0,
             stagger: 0.05,
             delay: 0.3,
             duration: 0.09,
         });
+        gsap.to(".img-thumb-history", {
+            delay: 0.35,
+            opacity: 1,
+            ease: "power2.out"
+        })
+        gsap.to(".custom-bg-history", {
+            delay: 0.5,
+            opacity: 1,
+            ease: "power2.in"
+        })
     </script>
 </body>
 
