@@ -2,7 +2,7 @@
   --color-green: #98e033;
   --color-white: #fff;
   --color-black: #232323;
-  --color-gray: #aaa;
+  --color-gray: #555;
   --color-yellow: #fce436;
 }
 
@@ -30,7 +30,7 @@ a {
 }
 
 .vektor-decoration {
-  opacity: .1;
+  opacity: 0.1;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   transform: translateY(2%);
@@ -85,7 +85,6 @@ a {
   margin-left: 5px;
 }
 
-
 /* button edited */
 .btn {
   border: none !important;
@@ -124,10 +123,6 @@ a {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-}
-
-.btn-primary:hover {
-  background: transparent !important;
 }
 
 .btn-primary:hover::before {
@@ -279,6 +274,15 @@ a {
   background: transparent;
 }
 
+.menu-button.active .button-menu {
+  border: 1px solid var(--color-green);
+}
+
+.menu-button.active .button-menu svg {
+  stroke: var(--color-green);
+}
+
+.menu-button.active .button-menu:hover,
 .button-menu:hover {
   border-color: var(--color-gray);
 }
@@ -375,6 +379,39 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* masonry */
+.masonry-layout {
+  --columns: 1;
+  --gap: 1rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-gap: var(--gap);
+  padding: 2rem;
+}
+.masonry-layout > div > img,
+.masonry-layout > div > div {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.masonry-layout.columns-1 {
+  --columns: 1;
+}
+.masonry-layout.columns-2 {
+  --columns: 2;
+}
+.masonry-layout.columns-3 {
+  --columns: 3;
+}
+.masonry-layout.columns-4 {
+  --columns: 4;
 }
 
 .custom-hero-title-d {
