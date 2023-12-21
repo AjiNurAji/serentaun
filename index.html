@@ -96,7 +96,8 @@
 
   <!-- hero -->
   <section class="position-relative vh-100 overflow-hidden" id="hero">
-    <video class="w-100 object-fit-cover h-100 position-absolute z-1" autoplay loop muted>
+    <video class="w-100 object-fit-cover h-100 position-absolute z-1 lazy" data-src="./assets/videos/video.mp4"
+      data-poster="./assets/images/preload/cover.webp" autoplay loop muted>
       <source src="./assets/videos/video.mp4" type="video/mp4" />
     </video>
     <div class="bg-wrapper position-relative z-2 h-100">
@@ -112,6 +113,7 @@
             <div class="left-text">
               <p class="font-kaisei-700 text-white">Let's Explore</p>
               <p class="font-body text-light">Cigugur, Kuningan</p>
+              <p class="font-body text-light" style="font-size: 10px;">by SMKN 4 Kuningan</p>
             </div>
             <div class="right-text">
               <p class="font-kaisei text-white">
@@ -212,6 +214,13 @@
       stagger: 0.05,
       delay: 0.3,
       duration: 0.2,
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.8.5/lazyload.min.js"></script>
+  <script>
+    var lazyLoadInstance = new LazyLoad({
+      // Your custom settings go here
     });
   </script>
 </body>
