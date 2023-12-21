@@ -412,11 +412,11 @@ a {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 #gallery .image img {
@@ -738,13 +738,22 @@ a {
   }
 
   #hero .text {
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
+  }
+  
+  #hero .left-text {
+    width: 100%;
   }
 
-  #hero .left-text,
   #hero .right-text {
-    flex: 0 0 1;
     width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  #hero .right-text p {
+    width: 80%;
+    text-align: end;
   }
 }
 
