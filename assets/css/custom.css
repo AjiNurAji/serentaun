@@ -403,26 +403,6 @@ a {
   object-fit: cover;
 }
 
-/* masonry */
-/* .masonry-layout {
-  --gap: 1rem;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: var(--gap);
-  padding: 2rem;
-} */
-/* 
-.masonry-layout>div>img,
-.masonry-layout>div>div {
-  width: 100%;
-  margin-bottom: 1rem;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-} */
 #gallery .left,
 #gallery .right {
   flex: 0 0 50%;
@@ -573,6 +553,10 @@ a {
   #hero .right a {
     font-size: 15px !important;
     padding: 15px 5px !important;
+  }
+
+  #gallery .images {
+    flex-direction: column !important;
   }
 }
 
