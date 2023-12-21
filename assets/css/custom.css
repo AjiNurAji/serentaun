@@ -395,8 +395,9 @@ a {
   grid-gap: var(--gap);
   padding: 2rem;
 }
-.masonry-layout > div > img,
-.masonry-layout > div > div {
+
+.masonry-layout>div>img,
+.masonry-layout>div>div {
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 15px;
@@ -405,21 +406,29 @@ a {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+
 .masonry-layout.columns-1 {
   --columns: 1;
 }
+
 .masonry-layout.columns-2 {
   --columns: 2;
 }
+
 .masonry-layout.columns-3 {
   --columns: 3;
 }
+
 .masonry-layout.columns-4 {
   --columns: 4;
 }
 
 .custom-hero-title-d {
   font-size: 64px;
+}
+
+.custom-hero-title-d .line {
+  overflow: hidden !important;
 }
 
 .img-thumb-history {
@@ -489,6 +498,30 @@ a {
 
 .caption-hero {
   font-size: 0.9rem;
+}
+
+.btn-hero-wrapper {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  bottom: 20px;
+  left: 30px;
+}
+
+.btn-hero-anchor {
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  border: 2px solid white;
+  padding: 8px 12px;
+  border-radius: 40px;
+  background: rgba(233, 231, 231, 0.20);
+}
+
+.btn-hero-anchor:hover {
+  background: rgba(233, 231, 231, 0.066);
 }
 
 @media (max-width: 368px) {
