@@ -13,13 +13,3 @@ menuButton.onclick = function () {
 closeButton.onclick = function () {
   navMain.classList.remove("active");
 };
-
-const Scrolling = () => {
-  if (scrollY > 0) {
-    menuButton.classList.add("active");
-  } else {
-    menuButton.classList.remove("active");
-  }
-};
-
-window.addEventListener("scroll", Scrolling);

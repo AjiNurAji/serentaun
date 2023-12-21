@@ -592,6 +592,39 @@ a {
   color: #000;
 }
 
+#rundown .number {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid var(--color-black);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#rundown .number-wrapper {
+  flex: 0 0 10%;
+}
+
+#rundown .title {
+  flex: 0 0 30%;
+}
+
+#rundown .description {
+  flex: 0 0 60%;
+}
+
+#rundown .wrapper-rundown {
+  border-top: 2px solid rgba(0, 0, 0, 0.15) !important;
+  padding: 15px 0;
+}
+
+#rundown .wrapper-rundown.border-bottom {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15) !important;
+}
+
 @media (max-width: 368px) {
   #hero .char {
     font-size: 60px !important;
@@ -599,17 +632,9 @@ a {
 }
 
 @media (max-width: 768px) {
-  #hero .right-text {
-    flex: 0 0 70% !important;
-  }
-
-  #hero .left-text {
-    flex: 0 0 30% !important;
-  }
-
   #hero .text {
     gap: 15px;
-    padding: 0 15px !important;
+    padding: 0 20px !important;
   }
 
   #hero .right a {
@@ -696,11 +721,30 @@ a {
   .caption-btn {
     width: 100%;
   }
+
+  #rundown .wrapper-rundown {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
 }
 
 @media(max-width: 760px) {
   .cs-floating-text {
     width: 80%;
+  }
+
+  #hero .char {
+    font-size: 80px;
+  }
+
+  #hero .text {
+    flex-direction: column !important;
+  }
+
+  #hero .left-text,
+  #hero .right-text {
+    flex: 0 0 1;
+    width: 100%;
   }
 }
 
