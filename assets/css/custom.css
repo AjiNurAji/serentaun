@@ -381,6 +381,10 @@ a {
   font-size: 64px;
 }
 
+.custom-hero-title-d .line {
+  overflow: hidden !important;
+}
+
 .img-thumb-history {
   /* width: 0%; */
   max-height: 119px;
