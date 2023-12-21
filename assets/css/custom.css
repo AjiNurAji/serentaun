@@ -412,6 +412,8 @@ a {
 }
 .masonry-layout.columns-4 {
   --columns: 4;
+}
+
 .custom-hero-title-d {
   font-size: 64px;
 }
