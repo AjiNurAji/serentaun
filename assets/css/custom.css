@@ -25,6 +25,21 @@ a {
   text-decoration: none !important;
 }
 
+.bg-white-gray {
+  background: #f1f1f1 !important;
+}
+
+.vektor-decoration {
+  opacity: .1;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transform: translateY(2%);
+  -webkit-transform: translateY(2%);
+  -moz-transform: translateY(2%);
+  -ms-transform: translateY(2%);
+  -o-transform: translateY(2%);
+}
+
 .char {
   font-family: "Kaisei HarunoUmi", serif !important;
   transform: translateY(200px);
@@ -56,9 +71,20 @@ a {
   color: var(--color-black) !important;
 }
 
+.link-to i::before,
 .link-to {
+  color: var(--color-black) !important;
+}
+
+.link-to:hover i::before,
+.link-to:hover {
   color: var(--color-green) !important;
 }
+
+.link-to:hover i {
+  margin-left: 5px;
+}
+
 
 /* button edited */
 .btn {
@@ -109,6 +135,11 @@ a {
 }
 
 /* navbar edited */
+#hamburger-button {
+  z-index: 9999;
+  position: fixed;
+}
+
 #nav-link {
   position: fixed;
   width: 100% !important;
@@ -245,10 +276,6 @@ a {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  position: fixed;
-  top: 5%;
-  right: 16.2%;
-  z-index: 9999;
   background: transparent;
 }
 
@@ -264,10 +291,6 @@ a {
   height: 60%;
   width: 50%;
   stroke: var(--color-white);
-}
-
-.skew {
-  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
 }
 
 /* preload style */
@@ -298,7 +321,7 @@ a {
 }
 
 #hero .text {
-  bottom: 10%;
+  bottom: 5%;
 }
 
 #hero .left,
@@ -330,12 +353,13 @@ a {
 
 /* history */
 #history .container {
-  gap: 90px;
+  gap: 50px;
 }
 
 #history .image-wrapper {
   flex: 0 0 40%;
-  height: 378.39px;
+  height: 100%;
+  width: 100%;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -418,12 +442,6 @@ a {
 @media (max-width: 1050px) {
   #history .container {
     flex-direction: column !important;
-  }
-}
-
-@media (min-width: 1366px) {
-  #hero .text {
-    bottom: 5%;
   }
 }
 
