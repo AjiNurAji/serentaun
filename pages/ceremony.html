@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seren Taun</title>
+    <meta name="description"
+        content="Upacara seren taun adalah ungkapan syukur dan do'a masyarakat sunda atas suka duka yang mereka alami terutama di bidang pertanian selama setahun yang telah berlalu dan tahun yang akan datang. " />
+    <meta name="keywords" content="serentaun, culture, kuningan, budaya kuningan" />
+    <meta name="author" content="SMK Negeri 4 Kuningan" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+    <!-- wowjs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/067f89a637.js" crossorigin="anonymous"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+</head>
+
+<body>
+    <div class="hamburger-wrapper  w-100 top-0 py-3" id="hamburger-button">
+        <div class="container d-flex justify-content-end align-items-center">
+            <div class="menu-button" id="menu-button">
+                <button class="button-menu filter-menu">
+                    <svg width="19" height="12" viewBox="0 0 19 12">
+                        <path
+                            d="m.742 3.26.485.874c.043-.024.13-.07.26-.136.22-.11.476-.233.765-.361A22.92 22.92 0 0 1 4.997 2.62c4.476-1.34 8.75-1.219 12.241 1.1.18.12.357.245.531.376l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008.375 9.443.246 4.71 1.663c-1.037.31-2 .675-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z" />
+                        <path
+                            d="m.742 6.748.485.874c.043-.023.13-.07.26-.135.22-.111.476-.233.765-.362A22.92 22.92 0 0 1 4.997 6.11c4.476-1.34 8.75-1.22 12.241 1.1.18.12.357.245.531.375l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008 3.864 9.443 3.735 4.71 5.152c-1.037.31-2 .675-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z" />
+                        <path
+                            d="m.742 10.237.485.874c.043-.024.13-.07.26-.136.22-.11.476-.232.765-.36a22.92 22.92 0 0 1 2.745-1.016c4.476-1.34 8.75-1.22 12.241 1.1.18.12.357.244.531.375l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008 7.353 9.443 7.224 4.71 8.64c-1.037.31-2 .674-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="d-flex justify-content-center w-100 align-items-center overflow-hidden" id="nav-link">
+        <div class="tiles">
+            <div class="tiles__line">
+                <div class="tiles__line-img tiles__line-img--large"
+                    style="background-image: url(../assets/images/acara/3.webp)"></div>
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/4.webp)"></div>
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/2.webp)"></div>
+                <div class="tiles__line-img tiles__line-img--large"
+                    style="background-image: url(../assets/images/acara/1.webp)"></div>
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/3.webp)"></div>
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/2.webp)"></div>
+            </div>
+            <div class="tiles__line">
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/1.webp)"></div>
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/4.webp)"></div>
+                <div class="tiles__line-img tiles__line-img--large"
+                    style="background-image: url(../assets/images/acara/3.webp)"></div>
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/1.webp)"></div>
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/4.webp)"></div>
+                <div class="tiles__line-img tiles__line-img--large"
+                    style="background-image: url(../assets/images/acara/2.webp)"></div>
+            </div>
+            <div class="tiles__line">
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/3.webp)"></div>
+                <div class="tiles__line-img tiles__line-img--large"
+                    style="background-image: url(../assets/images/acara/1.webp)"></div>
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/2.webp)"></div>
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/3.webp)"></div>
+                <div class="tiles__line-img tiles__line-img--large"
+                    style="background-image: url(../assets/images/acara/4.webp)"></div>
+                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/1.webp)"></div>
+            </div>
+        </div>
+        <ul class="d-flex justify-content-center align-items-center gap-3">
+            <li><a href="../index.html" class="link font-poppins-700">Home</a></li>
+            <!-- <li><a href="./pages/history.html" class="link font-poppins-700">History</a></li> -->
+            <li><a href="./ceremony.html" class="link font-poppins-700">Ceremony</a></li>
+            <li><a href="./gallery.html" class="link font-poppins-700">Gallery</a></li>
+            <li><a href=".about.html" class="link font-poppins-700">About</a></li>
+        </ul>
+        <button class="button-close" id="close-button">
+            <svg width="25" height="16" viewBox="0 0 25 16">
+                <path d="M2.238 7.079h2.727M2.482 9.496l-.666-2.7" />
+                <path d="M23.753 5.403s-1.87 16.88-22.03 1.785" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- rundown -->
+    <section class="py-5" id="people">
+        <div class="container">
+            <div class="title">
+                <h2 class="font-kaisei fw-mediun">People involved</h2>
+                <p class="font-body w-75 ">
+                    The Seren Taun is a Sundanese traditional ceremony that involves the entire village community. The
+                    ceremony is an
+                    expression of gratitude from the village community for the harvest they have obtained. It is also an
+                    opportunity to
+                    strengthen the togetherness and cohesiveness of the village community.
+                </p>
+            </div>
+            <div class="mt-5">
+                <div class="d-flex justify-content-between  people-section">
+                    <div class="w-50 ">
+                        <h2 class="font-kaisei-500">people involved</h2>
+                    </div>
+                    <div class="w-50">
+                        <div class="wrapper-people">
+                            <div class="">
+                                <h3 class="font-kaisei-500">Village Head</h3>
+                            </div>
+                        </div>
+                        <div class="wrapper-people">
+                            <div class="">
+                                <h3 class="font-kaisei-500">Traditional Figures</h3>
+                            </div>
+                        </div>
+                        <div class="wrapper-people">
+                            <div class="">
+                                <h3 class="font-kaisei-500">Religious Leaders</h3>
+                            </div>
+                        </div>
+                        <div class="wrapper-people">
+                            <div class="">
+                                <h3 class="font-kaisei-500">Local Communities</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- rundown -->
+    <section class="py-5" id="rundown">
+        <div class="container">
+            <div class="title">
+                <h2 class="font-kaisei fw-mediun">Rundown</h2>
+                <p class="font-body">
+                    Several events are held during the Seren Taun ceremony
+                </p>
+            </div>
+            <div class="mt-5">
+                <div class="d-flex justify-content-center align-items-center gap-2 wrapper-rundown">
+                    <div class="number-wrapper d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center number">
+                            1
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start h-100 title">
+                        <h3 class="font-kaisei-700">Ngajayak</h3>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-start description">
+                        <p class="font-body text-dark">
+                            The journey begins with "ngajayak," the ritualistic reaping of
+                            the first rice stalks. Accompanied by rhythmic chanting and
+                            music, villagers carefully gather the precious grains,
+                            symbolizing the start of the harvest season.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center gap-2 wrapper-rundown">
+                    <div class="number-wrapper d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center number">
+                            2
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start h-100 title">
+                        <h3 class="font-kaisei-700">Rice Pounding</h3>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-start description">
+                        <p class="font-body text-dark">
+                            The harvested rice is then brought to the village center for the
+                            "Rice Pounding" ceremony. The rhythmic pounding of rice in
+                            mortars echoes through the air, blending with joyous cheers and
+                            traditional music. This act signifies the transformation of raw
+                            grains into life-sustaining nourishment.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center gap-2 wrapper-rundown">
+                    <div class="number-wrapper d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center number">
+                            3
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start h-100 title">
+                        <h3 class="font-kaisei-700">Arak-Arakan</h3>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-start description">
+                        <p class="font-body text-dark">
+                            The highlight of the day arrives with the "Arak-arakan," a
+                            vibrant procession that snakes through the village streets.
+                            Villagers, adorned in their finest Sundanese attire, carry
+                            elaborately decorated bamboo offerings and sacred objects. The
+                            air thrumming with the melodies of angklung bamboo instruments
+                            and the hypnotic sway of Sundanese dancers, creating a spectacle
+                            of color and cultural pride.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center gap-2 wrapper-rundown border-bottom">
+                    <div class="number-wrapper d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center number">
+                            4
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start h-100 title">
+                        <h3 class="font-kaisei-700">Saung Leuit</h3>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-start description">
+                        <p class="font-body text-dark">
+                            The procession culminates at the "Saung Leuit," the communal
+                            rice barn. Here, the offerings are presented to Dewi Sri, the
+                            Sundanese rice goddess, in a solemn ceremony of thanksgiving.
+                            This act acknowledges the divine blessing bestowed upon the
+                            harvest and ensures future prosperity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5" id="videos">
+        <div class="container">
+            <div class="w-100 " id="video-container">
+                <img class="position-absolute w-100 height-video radius-default object-fit-cover z-3 "
+                    src="../assets/images/icons/Tumbnail.webp" alt="Video Cover Image" id="video-cover">
+                <iframe id="video" class="w-100 h-100 radius-default"
+                    src="//www.youtube.com/embed/s7HzwfaOCZU?enablejsapi=1&html5=1&mute=1" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+    <!-- spliting text -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- wow js -->
+    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+
+    <!-- custom js -->
+    <script src="../assets/js/nav.js"></script>
+    <script>
+        const text = new SplitType(".custom-hero-title-d");
+        gsap.to(".custom-hero-title-d", {
+            delay: 0.3,
+            opacity: 1
+        })
+        gsap.to(".char", {
+            y: 0,
+            stagger: 0.05,
+            delay: 0.3,
+            duration: 0.09,
+        });
+        gsap.to(".img-thumb-history", {
+            delay: 0.35,
+            opacity: 1,
+            ease: "power2.out"
+        })
+        gsap.to(".custom-bg-history", {
+            delay: 0.5,
+            opacity: 1,
+            ease: "power2.in"
+        })
+    </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        var player;
+
+        // this function gets called when API is ready to use
+        function onYouTubePlayerAPIReady() {
+            // create the global player from the specific iframe (#video)
+            player = new YT.Player("video", {
+                events: {
+                    // call this function when player is ready to use
+                    onReady: onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            // bind events
+            var playButton = document.getElementById("video-cover");
+            console.log('playbutton', playButton)
+            playButton.addEventListener("click", function () {
+                console.log('clicked')
+                playButton.remove()
+                player.playVideo();
+            });
+        }
+
+        // Inject YouTube API script
+        var tag = document.createElement("script");
+        tag.src = "//www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName("script")[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    </script>
+</body>
+
+</html>
