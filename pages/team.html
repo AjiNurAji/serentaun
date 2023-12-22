@@ -149,8 +149,10 @@
         <li>
           <a href="./ceremony.html" class="link font-poppins-700">Ceremony</a>
         </li>
-        <li><a href="./gallery.html" class="link font-poppins-700">Gallery</a></li>
-        <!-- <li><a href="./team.html" class="link font-poppins-700">Team</a></li> -->
+        <li>
+          <a href="./gallery.html" class="link font-poppins-700">Gallery</a>
+        </li>
+        <li><a href="./team.html" class="link font-poppins-700">Team</a></li>
       </ul>
       <button class="button-close" id="close-button">
         <svg width="25" height="16" viewBox="0 0 25 16">
@@ -160,31 +162,116 @@
       </button>
     </nav>
 
-    <!-- <section class="vh-100 d-flex justify-content-center align-items-center w-100" id="preload">
+    <section class="vh-100 d-flex justify-content-center align-items-center w-100" id="preload">
       <div class="bg-wrapper h-100 d-flex justify-content-center flex-column gap-2 align-items-center w-100">
-        <h1 class="font-poppins-700" data-splitting>Kuningan</h1>
-        <p class="loading text-white" data-splitting>Loading...</p>
+        <h1 class="font-poppins-700 overflow-hidden">Kuningan</h1>
+        <p class="loading text-white wow fadeInUp">Loading...</p>
       </div>
-    </section> -->
+    </section>
 
     <!-- team -->
-    <section class="py-5">
-      <div class="container">
-        <i data-feather="instagram"></i>
+    <section class="py-5 position-relative overflow-hidden" id="team">
+      <img
+        src="../assets/images/vektor/paddy.png"
+        alt="decoration"
+        class="position-absolute bottom-0 start-0 z-n1 vektor-decoration"
+      />
+      <div
+        class="container d-flex justify-content-center align-items-start gap-3 py-5"
+      >
+        <div class="title">
+          <h1 class="font-kaisei-700 text-dark text-capitalize">We are team</h1>
+        </div>
+        <div
+          class="text d-flex flex-column justify-content-center align-items-start gap-5 mt-5"
+        >
+          <div
+            class="d-flex justify-content-center align-items-start gap-3 border-bottom py-3"
+          >
+            <div class="images">
+              <div class="image-wrapper">
+                <img
+                  src="../assets/images/person/aji.webp"
+                  loading="lazy"
+                  alt="ajinuraji"
+                  style="transform: translateY(-10px)"
+                />
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-start name"
+            >
+              <h3 class="font-kaisei-700 text-dark">Aji Nur Aji</h3>
+              <a href="https://instagram.com/ajnrji_">
+                <i data-feather="instagram"></i> @ajnrji_
+              </a>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-start gap-3 border-bottom py-3"
+          >
+            <div class="images">
+              <div class="image-wrapper">
+                <img
+                  src="../assets/images/person/fajar.webp"
+                  loading="lazy"
+                  alt="fajararrizki"
+                  style="transform: translateY(-10px)"
+                />
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-start name"
+            >
+              <h3 class="font-kaisei-700 text-dark">Fajar Arrizki</h3>
+              <a href="https://instagram.com/fajararrizkii">
+                <i data-feather="instagram"></i> @fajararrizkii
+              </a>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-start gap-3 border-bottom py-3"
+          >
+            <div class="images">
+              <div class="image-wrapper">
+                <img
+                  src="../assets/images/person/malika.webp"
+                  loading="lazy"
+                  alt="malika"
+                />
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-start name"
+            >
+              <h3 class="font-kaisei-700 text-dark">Malika Shalshabila. A</h3>
+              <a href="https://instagram.com/ajnrji_">
+                <i data-feather="instagram"></i> @mlkash_a
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- team end -->
 
     <!-- footer -->
     <footer class="py-5 bg-dark">
-      <div class="container d-flex justify-content-between align-items-center">
-        <h2 class="font-kaisei-700 text-light text-capitalize">seren taun</h2>
-        <p class="text-light">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+          <a href="https://instagram.com/smkn_04kng" class="text-white link-social">
+            <i data-feather="instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/smkn4kng" class="text-white link-social">
+            <i data-feather="facebook"></i>
+          </a>
+        </div>
+        <p class="text-center text-white">
           &copy; 2023 Copyright Seren Taun - All Right Reversed.
         </p>
       </div>
     </footer>
-    <!-- gallery end -->
+    <!-- footer end -->
 
     <!-- feather icon -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -203,5 +290,18 @@
       feather.replace();
     </script>
     <script src="../assets/js/nav.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      const preload_text = new SplitType("#preload h1");
+      gsap.to(".char", {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.1,
+        duration: 0.2,
+      });
+    </script>
+    <script src="../assets/js/preload.js"></script>
   </body>
 </html>

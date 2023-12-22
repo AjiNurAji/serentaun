@@ -1,292 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seren Taun</title>
-    <meta name="description"
-        content="Upacara seren taun adalah ungkapan syukur dan do'a masyarakat sunda atas suka duka yang mereka alami terutama di bidang pertanian selama setahun yang telah berlalu dan tahun yang akan datang. " />
-    <meta name="keywords" content="serentaun, culture, kuningan, budaya kuningan" />
+    <meta
+      name="description"
+      content="Upacara seren taun adalah ungkapan syukur dan do'a masyarakat sunda atas suka duka yang mereka alami terutama di bidang pertanian selama setahun yang telah berlalu dan tahun yang akan datang. "
+    />
+    <meta
+      name="keywords"
+      content="serentaun, culture, kuningan, budaya kuningan"
+    />
     <meta name="author" content="SMK Negeri 4 Kuningan" />
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
 
     <!-- wowjs -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css"
+    />
 
     <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/067f89a637.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/067f89a637.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- custom css -->
     <link rel="stylesheet" href="../assets/css/custom.css" />
     <link rel="stylesheet" href="../assets/css/font.css" />
-</head>
+  </head>
 
-<body>
-    <div class="hamburger-wrapper  w-100 top-0 py-3" id="hamburger-button">
-        <div class="container d-flex justify-content-end align-items-center">
-            <div class="menu-button" id="menu-button">
-                <button class="button-menu filter-menu">
-                    <svg width="19" height="12" viewBox="0 0 19 12">
-                        <path
-                            d="m.742 3.26.485.874c.043-.024.13-.07.26-.136.22-.11.476-.233.765-.361A22.92 22.92 0 0 1 4.997 2.62c4.476-1.34 8.75-1.219 12.241 1.1.18.12.357.245.531.376l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008.375 9.443.246 4.71 1.663c-1.037.31-2 .675-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z" />
-                        <path
-                            d="m.742 6.748.485.874c.043-.023.13-.07.26-.135.22-.111.476-.233.765-.362A22.92 22.92 0 0 1 4.997 6.11c4.476-1.34 8.75-1.22 12.241 1.1.18.12.357.245.531.375l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008 3.864 9.443 3.735 4.71 5.152c-1.037.31-2 .675-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z" />
-                        <path
-                            d="m.742 10.237.485.874c.043-.024.13-.07.26-.136.22-.11.476-.232.765-.36a22.92 22.92 0 0 1 2.745-1.016c4.476-1.34 8.75-1.22 12.241 1.1.18.12.357.244.531.375l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008 7.353 9.443 7.224 4.71 8.64c-1.037.31-2 .674-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z" />
-                    </svg>
-                </button>
-            </div>
+  <body>
+    <div class="hamburger-wrapper w-100 top-0 py-3" id="hamburger-button">
+      <div class="container d-flex justify-content-end align-items-center">
+        <div class="menu-button" id="menu-button">
+          <button class="button-menu filter-menu">
+            <svg width="19" height="12" viewBox="0 0 19 12">
+              <path
+                d="m.742 3.26.485.874c.043-.024.13-.07.26-.136.22-.11.476-.233.765-.361A22.92 22.92 0 0 1 4.997 2.62c4.476-1.34 8.75-1.219 12.241 1.1.18.12.357.245.531.376l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008.375 9.443.246 4.71 1.663c-1.037.31-2 .675-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z"
+              />
+              <path
+                d="m.742 6.748.485.874c.043-.023.13-.07.26-.135.22-.111.476-.233.765-.362A22.92 22.92 0 0 1 4.997 6.11c4.476-1.34 8.75-1.22 12.241 1.1.18.12.357.245.531.375l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008 3.864 9.443 3.735 4.71 5.152c-1.037.31-2 .675-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z"
+              />
+              <path
+                d="m.742 10.237.485.874c.043-.024.13-.07.26-.136.22-.11.476-.232.765-.36a22.92 22.92 0 0 1 2.745-1.016c4.476-1.34 8.75-1.22 12.241 1.1.18.12.357.244.531.375l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008 7.353 9.443 7.224 4.71 8.64c-1.037.31-2 .674-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z"
+              />
+            </svg>
+          </button>
         </div>
+      </div>
     </div>
 
-    <nav class="d-flex justify-content-center w-100 align-items-center overflow-hidden" id="nav-link">
-        <div class="tiles">
-            <div class="tiles__line">
-                <div class="tiles__line-img tiles__line-img--large"
-                    style="background-image: url(../assets/images/acara/3.webp)"></div>
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/4.webp)"></div>
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/2.webp)"></div>
-                <div class="tiles__line-img tiles__line-img--large"
-                    style="background-image: url(../assets/images/acara/1.webp)"></div>
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/3.webp)"></div>
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/2.webp)"></div>
-            </div>
-            <div class="tiles__line">
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/1.webp)"></div>
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/4.webp)"></div>
-                <div class="tiles__line-img tiles__line-img--large"
-                    style="background-image: url(../assets/images/acara/3.webp)"></div>
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/1.webp)"></div>
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/4.webp)"></div>
-                <div class="tiles__line-img tiles__line-img--large"
-                    style="background-image: url(../assets/images/acara/2.webp)"></div>
-            </div>
-            <div class="tiles__line">
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/3.webp)"></div>
-                <div class="tiles__line-img tiles__line-img--large"
-                    style="background-image: url(../assets/images/acara/1.webp)"></div>
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/2.webp)"></div>
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/3.webp)"></div>
-                <div class="tiles__line-img tiles__line-img--large"
-                    style="background-image: url(../assets/images/acara/4.webp)"></div>
-                <div class="tiles__line-img" style="background-image: url(../assets/images/acara/1.webp)"></div>
-            </div>
+    <nav
+      class="d-flex justify-content-center w-100 align-items-center overflow-hidden"
+      id="nav-link"
+    >
+      <div class="tiles">
+        <div class="tiles__line">
+          <div
+            class="tiles__line-img tiles__line-img--large"
+            style="background-image: url(../assets/images/acara/3.webp)"
+          ></div>
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/4.webp)"
+          ></div>
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/2.webp)"
+          ></div>
+          <div
+            class="tiles__line-img tiles__line-img--large"
+            style="background-image: url(../assets/images/acara/1.webp)"
+          ></div>
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/3.webp)"
+          ></div>
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/2.webp)"
+          ></div>
         </div>
-        <ul class="d-flex justify-content-center align-items-center gap-3">
-            <li><a href="../index.html" class="link font-poppins-700">Home</a></li>
-            <li><a href="./history.html" class="link font-poppins-700">History</a></li>
-            <li><a href="./ceremony.html" class="link font-poppins-700">Ceremony</a></li>
-            <li><a href="./gallery.html" class="link font-poppins-700">Gallery</a></li>
-            <li><a href="./about.html" class="link font-poppins-700">About</a></li>
-        </ul>
-        <button class="button-close" id="close-button">
-            <svg width="25" height="16" viewBox="0 0 25 16">
-                <path d="M2.238 7.079h2.727M2.482 9.496l-.666-2.7" />
-                <path d="M23.753 5.403s-1.87 16.88-22.03 1.785" />
-            </svg>
-        </button>
+        <div class="tiles__line">
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/1.webp)"
+          ></div>
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/4.webp)"
+          ></div>
+          <div
+            class="tiles__line-img tiles__line-img--large"
+            style="background-image: url(../assets/images/acara/3.webp)"
+          ></div>
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/1.webp)"
+          ></div>
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/4.webp)"
+          ></div>
+          <div
+            class="tiles__line-img tiles__line-img--large"
+            style="background-image: url(../assets/images/acara/2.webp)"
+          ></div>
+        </div>
+        <div class="tiles__line">
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/3.webp)"
+          ></div>
+          <div
+            class="tiles__line-img tiles__line-img--large"
+            style="background-image: url(../assets/images/acara/1.webp)"
+          ></div>
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/2.webp)"
+          ></div>
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/3.webp)"
+          ></div>
+          <div
+            class="tiles__line-img tiles__line-img--large"
+            style="background-image: url(../assets/images/acara/4.webp)"
+          ></div>
+          <div
+            class="tiles__line-img"
+            style="background-image: url(../assets/images/acara/1.webp)"
+          ></div>
+        </div>
+      </div>
+      <ul class="d-flex justify-content-center align-items-center gap-3">
+        <li><a href="../index.html" class="link font-poppins-700">Home</a></li>
+        <li>
+          <a href="./history.html" class="link font-poppins-700">History</a>
+        </li>
+        <li>
+          <a href="./ceremony.html" class="link font-poppins-700">Ceremony</a>
+        </li>
+        <li>
+          <a href="./gallery.html" class="link font-poppins-700">Gallery</a>
+        </li>
+        <li><a href="./about.html" class="link font-poppins-700">About</a></li>
+      </ul>
+      <button class="button-close" id="close-button">
+        <svg width="25" height="16" viewBox="0 0 25 16">
+          <path d="M2.238 7.079h2.727M2.482 9.496l-.666-2.7" />
+          <path d="M23.753 5.403s-1.87 16.88-22.03 1.785" />
+        </svg>
+      </button>
     </nav>
+
+    <section
+      class="vh-100 d-flex justify-content-center align-items-center w-100"
+      id="preload"
+    >
+      <div
+        class="bg-wrapper h-100 d-flex justify-content-center flex-column gap-2 align-items-center w-100"
+      >
+        <h1 class="font-poppins-700 overflow-hidden">Kuningan</h1>
+        <p class="loading text-white wow fadeInUp">Loading...</p>
+      </div>
+    </section>
 
     <!-- hero -->
     <section class="py-5 position-relative overflow-hidden">
-        <div class="container pt-5 ">
-            <div class="d-flex justify-content-between w-100 mb-3 top-section ">
-                <h1 class="w-50 custom-hero-title-d overflow-hidden">A place of history and tradition.</h1>
-                <img class="img-fluid img-thumb-history object-fit-cover rounded-4 mt-3"
-                    src="../assets/images/history/histori1.webp" alt="history of serentaun">
-            </div>
-            <div class="position-relative custom-bg-history mt-4"
-                style="background-image: url('../assets/images/preload/preload.webp');">
-                <div
-                    class="bg-white position-absolute radius-default right-0 p-3 d-flex align-items-center cs-floating-text">
-                    <svg class="hero-arrow" width="30" height="30" viewBox="0 0 30 30" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g id="ArrowCircleDownLeft-r">
-                            <g id="Vector">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M15 2.8125C15 2.8125 17.4789 2.8125 19.7442 3.77064C19.7442 3.77064 21.9315 4.69579 23.6179 6.38214C23.6179 6.38214 25.3042 8.06848 26.2294 10.2558C26.2294 10.2558 27.1875 12.5211 27.1875 15C27.1875 15 27.1875 17.4789 26.2294 19.7442C26.2294 19.7442 25.3042 21.9315 23.6179 23.6179C23.6179 23.6179 21.9315 25.3042 19.7442 26.2294C19.7442 26.2294 17.4789 27.1875 15 27.1875C15 27.1875 12.5211 27.1875 10.2558 26.2294C10.2558 26.2294 8.06848 25.3042 6.38214 23.6179C6.38214 23.6179 4.69579 21.9315 3.77064 19.7442C3.77064 19.7442 2.8125 17.4789 2.8125 15C2.8125 15 2.8125 12.5211 3.77064 10.2558C3.77064 10.2558 4.69579 8.06848 6.38214 6.38214C6.38214 6.38214 8.06848 4.69579 10.2558 3.77064C10.2558 3.77064 12.5211 2.8125 15 2.8125ZM15 4.6875C15 4.6875 12.9013 4.6875 10.9862 5.49752C10.9862 5.49752 9.13571 6.28021 7.70796 7.70796C7.70796 7.70796 6.28021 9.13571 5.49752 10.9862C5.49752 10.9862 4.6875 12.9013 4.6875 15C4.6875 15 4.6875 17.0987 5.49752 19.0138C5.49752 19.0138 6.28021 20.8643 7.70796 22.292C7.70796 22.292 9.13571 23.7198 10.9862 24.5025C10.9862 24.5025 12.9013 25.3125 15 25.3125C15 25.3125 17.0987 25.3125 19.0138 24.5025C19.0138 24.5025 20.8643 23.7198 22.292 22.292C22.292 22.292 23.7198 20.8643 24.5025 19.0138C24.5025 19.0138 25.3125 17.0987 25.3125 15C25.3125 15 25.3125 12.9013 24.5025 10.9862C24.5025 10.9862 23.7198 9.13571 22.292 7.70796C22.292 7.70796 20.8643 6.28021 19.0138 5.49752C19.0138 5.49752 17.0987 4.6875 15 4.6875Z"
-                                    fill="#1C1C1C" />
-                                <path
-                                    d="M11.7188 19.2188H17.3438C17.8615 19.2188 18.2812 18.799 18.2812 18.2812C18.2812 17.7635 17.8615 17.3438 17.3438 17.3438H12.6562V12.6562C12.6562 12.1385 12.2365 11.7188 11.7188 11.7188C11.201 11.7188 10.7812 12.1385 10.7812 12.6562V18.2812C10.7812 18.799 11.201 19.2188 11.7188 19.2188Z"
-                                    fill="#1C1C1C" />
-                                <path
-                                    d="M18.9438 12.382C19.1196 12.2062 19.2188 11.9674 19.2188 11.7188C19.2188 11.4701 19.12 11.2317 18.9442 11.0558L18.9361 11.0478C18.761 10.8772 18.5257 10.7812 18.2812 10.7812C18.0326 10.7812 17.7942 10.88 17.6183 11.0558L11.0562 17.618C10.8804 17.7938 10.7812 18.0326 10.7812 18.2812C10.7812 18.2963 10.7816 18.3113 10.7823 18.3263C10.7935 18.5591 10.891 18.7794 11.0558 18.9442C11.2317 19.12 11.4701 19.2188 11.7188 19.2188C11.9674 19.2188 12.2058 19.12 12.3817 18.9442L18.9438 12.382Z"
-                                    fill="#1C1C1C" />
-                            </g>
-                        </g>
-                    </svg>
-                    <p class="caption-hero">This is a seren taun tradition carried out in the Cigugur area, Kuningan
-                        district</p>
-                </div>
-                <div class="position-absolute btn-hero-wrapper">
-                    <a class="btn-hero-anchor" href="#history">History</a>
-                    <a class="btn-hero-anchor" href="#what">What Is?</a>
-                    <a class="btn-hero-anchor" href="#clothes">Clothes</a>
-                </div>
-            </div>
+      <div class="container pt-5">
+        <div class="d-flex justify-content-between w-100 mb-3 top-section">
+          <h1 class="w-50 custom-hero-title-d overflow-hidden">
+            A place of history and tradition.
+          </h1>
+          <img
+            class="img-fluid img-thumb-history object-fit-cover rounded-4 mt-3"
+            src="../assets/images/history/histori1.webp"
+            alt="history of serentaun"
+          />
         </div>
+        <div
+          class="position-relative custom-bg-history mt-4"
+          style="background-image: url('../assets/images/preload/preload.webp')"
+        >
+          <div
+            class="bg-white position-absolute radius-default right-0 p-3 d-flex align-items-center cs-floating-text"
+          >
+            <svg
+              class="hero-arrow"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="ArrowCircleDownLeft-r">
+                <g id="Vector">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15 2.8125C15 2.8125 17.4789 2.8125 19.7442 3.77064C19.7442 3.77064 21.9315 4.69579 23.6179 6.38214C23.6179 6.38214 25.3042 8.06848 26.2294 10.2558C26.2294 10.2558 27.1875 12.5211 27.1875 15C27.1875 15 27.1875 17.4789 26.2294 19.7442C26.2294 19.7442 25.3042 21.9315 23.6179 23.6179C23.6179 23.6179 21.9315 25.3042 19.7442 26.2294C19.7442 26.2294 17.4789 27.1875 15 27.1875C15 27.1875 12.5211 27.1875 10.2558 26.2294C10.2558 26.2294 8.06848 25.3042 6.38214 23.6179C6.38214 23.6179 4.69579 21.9315 3.77064 19.7442C3.77064 19.7442 2.8125 17.4789 2.8125 15C2.8125 15 2.8125 12.5211 3.77064 10.2558C3.77064 10.2558 4.69579 8.06848 6.38214 6.38214C6.38214 6.38214 8.06848 4.69579 10.2558 3.77064C10.2558 3.77064 12.5211 2.8125 15 2.8125ZM15 4.6875C15 4.6875 12.9013 4.6875 10.9862 5.49752C10.9862 5.49752 9.13571 6.28021 7.70796 7.70796C7.70796 7.70796 6.28021 9.13571 5.49752 10.9862C5.49752 10.9862 4.6875 12.9013 4.6875 15C4.6875 15 4.6875 17.0987 5.49752 19.0138C5.49752 19.0138 6.28021 20.8643 7.70796 22.292C7.70796 22.292 9.13571 23.7198 10.9862 24.5025C10.9862 24.5025 12.9013 25.3125 15 25.3125C15 25.3125 17.0987 25.3125 19.0138 24.5025C19.0138 24.5025 20.8643 23.7198 22.292 22.292C22.292 22.292 23.7198 20.8643 24.5025 19.0138C24.5025 19.0138 25.3125 17.0987 25.3125 15C25.3125 15 25.3125 12.9013 24.5025 10.9862C24.5025 10.9862 23.7198 9.13571 22.292 7.70796C22.292 7.70796 20.8643 6.28021 19.0138 5.49752C19.0138 5.49752 17.0987 4.6875 15 4.6875Z"
+                    fill="#1C1C1C"
+                  />
+                  <path
+                    d="M11.7188 19.2188H17.3438C17.8615 19.2188 18.2812 18.799 18.2812 18.2812C18.2812 17.7635 17.8615 17.3438 17.3438 17.3438H12.6562V12.6562C12.6562 12.1385 12.2365 11.7188 11.7188 11.7188C11.201 11.7188 10.7812 12.1385 10.7812 12.6562V18.2812C10.7812 18.799 11.201 19.2188 11.7188 19.2188Z"
+                    fill="#1C1C1C"
+                  />
+                  <path
+                    d="M18.9438 12.382C19.1196 12.2062 19.2188 11.9674 19.2188 11.7188C19.2188 11.4701 19.12 11.2317 18.9442 11.0558L18.9361 11.0478C18.761 10.8772 18.5257 10.7812 18.2812 10.7812C18.0326 10.7812 17.7942 10.88 17.6183 11.0558L11.0562 17.618C10.8804 17.7938 10.7812 18.0326 10.7812 18.2812C10.7812 18.2963 10.7816 18.3113 10.7823 18.3263C10.7935 18.5591 10.891 18.7794 11.0558 18.9442C11.2317 19.12 11.4701 19.2188 11.7188 19.2188C11.9674 19.2188 12.2058 19.12 12.3817 18.9442L18.9438 12.382Z"
+                    fill="#1C1C1C"
+                  />
+                </g>
+              </g>
+            </svg>
+            <p class="caption-hero">
+              This is a seren taun tradition carried out in the Cigugur area,
+              Kuningan district
+            </p>
+          </div>
+          <div class="position-absolute btn-hero-wrapper">
+            <a class="btn-hero-anchor" href="#history">History</a>
+            <a class="btn-hero-anchor" href="#what">What Is?</a>
+            <a class="btn-hero-anchor" href="#clothes">Clothes</a>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- hero end -->
 
     <!-- history -->
     <section class="py-3 d-md-py-5 position-relative overflow-hidden">
-        <div class="container">
-            <div class="liner"></div>
-            <div class="section-description d-flex w-100 justify-content-between my-5" id="history">
-                <div class="description-title">
-                    <h2>The History of Seren Taun</h2>
-                </div>
-                <div class="description-paragraf">
-                    <p>The history of Seren Taun can be traced back to a time before the Sundanese people knew Islam.
-                        The
-                        ceremony is a legacy
-                        from their ancestors that is still preserved today.Initially, Seren Taun was only performed by
-                        Sundanese people who were
-                        farmers. However, over time, the ceremony began to be performed by the general public, including
-                        urban dwellers.In the
-                        15th century, Seren Taun became an official ceremony of the Sundanese Kingdom. The ceremony was
-                        held
-                        annually to pray to
-                        Dewi Sri, the rice goddess in Sundanese belief, for a bountiful harvest.During the Dutch
-                        colonial
-                        period, Seren Taun was
-                        banned. However, the ceremony was secretly preserved by the Sundanese people.After Indonesia
-                        gained
-                        independence, Seren
-                        Taun was again allowed to be held. The ceremony has become increasingly popular and is one of
-                        the
-                        tourist attractions in
-                        the Kuningan Regency.</p>
-                </div>
-            </div>
-            <div class="position-relative description-image  w-100 mb-5 ">
-                <img class="object-fit-cover img-fluid w-100 " src="../assets/images/history/histori2.webp"
-                    alt="history" />
-            </div>
-
-            <div class="liner"></div>
-            <div class="section-description d-flex w-100 justify-content-between my-5" id="what">
-                <div class="description-title">
-                    <h2>Meaning of Seren Taun</h2>
-                </div>
-                <div class="description-paragraf">
-                    <p>Seren Taun is an annual traditional Sundanese ceremony that celebrates the harvest of rice. The
-                        ceremony has deep
-                        significance for the Sundanese people, not only as a thanksgiving for a bountiful harvest, but
-                        also as a way to
-                        strengthen community ties and preserve Sundanese culture.
-                    </p>
-                    <br />
-                    <p>
-                        At its core, Seren Taun is an expression of gratitude from the Sundanese people to God Almighty
-                        for the blessing of a
-                        plentiful harvest. The people are grateful for the fertile land, the favorable weather, and the
-                        hard work of the farmers
-                        who produce nutritious rice. Seren Taun is a manifestation of the Sundanese people's
-                        appreciation for nature and the
-                        fruits of human labor.During the Seren Taun ceremony, Sundanese people bring their rice harvest
-                        to the ceremony site.
-                        The harvest is then offered to Dewi Sri, the rice goddess in Sundanese belief. The ceremony is a
-                        symbol of the Sundanese
-                        people's gratitude for the harvest that has been given by God Almighty.
-                    </p>
-                    <br />
-                    <p>
-                        Seren Taun also serves as a way to strengthen community ties among members of the community.
-                        Through the shared
-                        experience of preparing for, participating in, and enjoying a communal meal, a sense of
-                        brotherhood and cooperation is
-                        strengthened. Seren Taun unites people of all ages, professions, and backgrounds in a common
-                        spirit, strengthening the
-                        bonds of community.During the Seren Taun ceremony, Sundanese people gather together to prepare
-                        everything that is
-                        needed. They work together to clean the ceremony site, prepare offerings, and dance and sing
-                        together. The ceremony is a
-                        way for the Sundanese people to get to know each other and strengthen ties among them.
-                    </p>
-                    <br />
-                    <p>
-                        Seren Taun acts as a vehicle for the transmission of Sundanese culture from generation to
-                        generation. The rituals,
-                        traditional music and dance, and offerings presented to Dewi Sri all preserve knowledge,
-                        beliefs, and practices that
-                        have been passed down for generations. The ceremony ensures the preservation and continuity of a
-                        rich cultural heritage
-                        for future generations.During the Seren Taun ceremony, Sundanese people perform various
-                        Sundanese traditional arts, such
-                        as jaipongan dance, pencak silat, and music. The ceremony is a way for the Sundanese people to
-                        preserve and introduce
-                        their culture to young people.</p>
-                </div>
-            </div>
-            <div class="position-relative description-image  w-100 mb-5">
-                <img class="object-fit-cover img-fluid w-100 " src="../assets/images/history/histori3.webp"
-                    alt="history" />
-            </div>
-
-            <div class="liner"></div>
-            <div class="section-description d-flex w-100 justify-content-between my-5" id="clothes">
-                <div class="description-title">
-                    <h2>Clothes that are often worn at Seren Taun</h2>
-                </div>
-                <div class="description-paragraf">
-                    <p>
-                        Kampret is the most common traditional Sundanese clothing worn at the Seren Taun ceremony.
-                        Kampret
-                        is usually made of
-                        batik or plain cloth. Kampret is usually white or black, which symbolizes purity and simplicity.
-                        Kampret has a simple cut, with long sleeves and a round collar. Kampret is usually equipped with
-                        buttons or a belt.
-                        Kampret is a loose-fitting garment that hangs down to the knees. It is usually made of a single
-                        piece of cloth that is
-                        sewn together at the shoulders and sides.
-                        Kampret symbolizes purity and simplicity. The white or black color of the kampret symbolizes
-                        purity.
-                        The simple cut of
-                        the kampret symbolizes simplicity.
-                        Kampret is a traditional Sundanese garment that has been worn for centuries. It is believed to
-                        have
-                        originated from the
-                        Kingdom of Sunda, which ruled much of western Java from the 13th to the 16th centuries.
-                    </p>
-                    <div class="d-flex caption-btn">
-                        <p>Learn more about kampret, the traditional Sundanese garment that is rich in meaning.</p>
-                        <svg class="hero-arrow" width="30" height="30" viewBox="0 0 30 30" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="ArrowCircleDownLeft-r">
-                                <g id="Vector">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M15 2.8125C15 2.8125 17.4789 2.8125 19.7442 3.77064C19.7442 3.77064 21.9315 4.69579 23.6179 6.38214C23.6179 6.38214 25.3042 8.06848 26.2294 10.2558C26.2294 10.2558 27.1875 12.5211 27.1875 15C27.1875 15 27.1875 17.4789 26.2294 19.7442C26.2294 19.7442 25.3042 21.9315 23.6179 23.6179C23.6179 23.6179 21.9315 25.3042 19.7442 26.2294C19.7442 26.2294 17.4789 27.1875 15 27.1875C15 27.1875 12.5211 27.1875 10.2558 26.2294C10.2558 26.2294 8.06848 25.3042 6.38214 23.6179C6.38214 23.6179 4.69579 21.9315 3.77064 19.7442C3.77064 19.7442 2.8125 17.4789 2.8125 15C2.8125 15 2.8125 12.5211 3.77064 10.2558C3.77064 10.2558 4.69579 8.06848 6.38214 6.38214C6.38214 6.38214 8.06848 4.69579 10.2558 3.77064C10.2558 3.77064 12.5211 2.8125 15 2.8125ZM15 4.6875C15 4.6875 12.9013 4.6875 10.9862 5.49752C10.9862 5.49752 9.13571 6.28021 7.70796 7.70796C7.70796 7.70796 6.28021 9.13571 5.49752 10.9862C5.49752 10.9862 4.6875 12.9013 4.6875 15C4.6875 15 4.6875 17.0987 5.49752 19.0138C5.49752 19.0138 6.28021 20.8643 7.70796 22.292C7.70796 22.292 9.13571 23.7198 10.9862 24.5025C10.9862 24.5025 12.9013 25.3125 15 25.3125C15 25.3125 17.0987 25.3125 19.0138 24.5025C19.0138 24.5025 20.8643 23.7198 22.292 22.292C22.292 22.292 23.7198 20.8643 24.5025 19.0138C24.5025 19.0138 25.3125 17.0987 25.3125 15C25.3125 15 25.3125 12.9013 24.5025 10.9862C24.5025 10.9862 23.7198 9.13571 22.292 7.70796C22.292 7.70796 20.8643 6.28021 19.0138 5.49752C19.0138 5.49752 17.0987 4.6875 15 4.6875Z"
-                                        fill="#1C1C1C" />
-                                    <path
-                                        d="M11.7188 19.2188H17.3438C17.8615 19.2188 18.2812 18.799 18.2812 18.2812C18.2812 17.7635 17.8615 17.3438 17.3438 17.3438H12.6562V12.6562C12.6562 12.1385 12.2365 11.7188 11.7188 11.7188C11.201 11.7188 10.7812 12.1385 10.7812 12.6562V18.2812C10.7812 18.799 11.201 19.2188 11.7188 19.2188Z"
-                                        fill="#1C1C1C" />
-                                    <path
-                                        d="M18.9438 12.382C19.1196 12.2062 19.2188 11.9674 19.2188 11.7188C19.2188 11.4701 19.12 11.2317 18.9442 11.0558L18.9361 11.0478C18.761 10.8772 18.5257 10.7812 18.2812 10.7812C18.0326 10.7812 17.7942 10.88 17.6183 11.0558L11.0562 17.618C10.8804 17.7938 10.7812 18.0326 10.7812 18.2812C10.7812 18.2963 10.7816 18.3113 10.7823 18.3263C10.7935 18.5591 10.891 18.7794 11.0558 18.9442C11.2317 19.12 11.4701 19.2188 11.7188 19.2188C11.9674 19.2188 12.2058 19.12 12.3817 18.9442L18.9438 12.382Z"
-                                        fill="#1C1C1C" />
-                                </g>
-                            </g>
-                        </svg>
-                    </div>
-
-                    <div class="mt-3">
-                        <a href="/pages/ceremony.html" class="custom-btn">
-                            Read More <i class="icon fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="position-relative description-image  w-100">
-                <img class="object-fit-cover img-fluid w-100 " src="../assets/images/history/histori4.webp"
-                    alt="history" />
-            </div>
+      <div class="container">
+        <div class="liner"></div>
+        <div
+          class="section-description d-flex w-100 justify-content-between my-5"
+          id="history"
+        >
+          <div class="description-title">
+            <h2>The History of Seren Taun</h2>
+          </div>
+          <div class="description-paragraf">
+            <p>
+              The history of Seren Taun can be traced back to a time before the
+              Sundanese people knew Islam. The ceremony is a legacy from their
+              ancestors that is still preserved today.Initially, Seren Taun was
+              only performed by Sundanese people who were farmers. However, over
+              time, the ceremony began to be performed by the general public,
+              including urban dwellers.In the 15th century, Seren Taun became an
+              official ceremony of the Sundanese Kingdom. The ceremony was held
+              annually to pray to Dewi Sri, the rice goddess in Sundanese
+              belief, for a bountiful harvest.During the Dutch colonial period,
+              Seren Taun was banned. However, the ceremony was secretly
+              preserved by the Sundanese people.After Indonesia gained
+              independence, Seren Taun was again allowed to be held. The
+              ceremony has become increasingly popular and is one of the tourist
+              attractions in the Kuningan Regency.
+            </p>
+          </div>
         </div>
+        <div class="position-relative description-image w-100 mb-5">
+          <img
+            class="object-fit-cover img-fluid w-100"
+            src="../assets/images/history/histori2.webp"
+            alt="history"
+          />
+        </div>
+
+        <div class="liner"></div>
+        <div
+          class="section-description d-flex w-100 justify-content-between my-5"
+          id="what"
+        >
+          <div class="description-title">
+            <h2>Meaning of Seren Taun</h2>
+          </div>
+          <div class="description-paragraf">
+            <p>
+              Seren Taun is an annual traditional Sundanese ceremony that
+              celebrates the harvest of rice. The ceremony has deep significance
+              for the Sundanese people, not only as a thanksgiving for a
+              bountiful harvest, but also as a way to strengthen community ties
+              and preserve Sundanese culture.
+            </p>
+            <br />
+            <p>
+              At its core, Seren Taun is an expression of gratitude from the
+              Sundanese people to God Almighty for the blessing of a plentiful
+              harvest. The people are grateful for the fertile land, the
+              favorable weather, and the hard work of the farmers who produce
+              nutritious rice. Seren Taun is a manifestation of the Sundanese
+              people's appreciation for nature and the fruits of human
+              labor.During the Seren Taun ceremony, Sundanese people bring their
+              rice harvest to the ceremony site. The harvest is then offered to
+              Dewi Sri, the rice goddess in Sundanese belief. The ceremony is a
+              symbol of the Sundanese people's gratitude for the harvest that
+              has been given by God Almighty.
+            </p>
+            <br />
+            <p>
+              Seren Taun also serves as a way to strengthen community ties among
+              members of the community. Through the shared experience of
+              preparing for, participating in, and enjoying a communal meal, a
+              sense of brotherhood and cooperation is strengthened. Seren Taun
+              unites people of all ages, professions, and backgrounds in a
+              common spirit, strengthening the bonds of community.During the
+              Seren Taun ceremony, Sundanese people gather together to prepare
+              everything that is needed. They work together to clean the
+              ceremony site, prepare offerings, and dance and sing together. The
+              ceremony is a way for the Sundanese people to get to know each
+              other and strengthen ties among them.
+            </p>
+            <br />
+            <p>
+              Seren Taun acts as a vehicle for the transmission of Sundanese
+              culture from generation to generation. The rituals, traditional
+              music and dance, and offerings presented to Dewi Sri all preserve
+              knowledge, beliefs, and practices that have been passed down for
+              generations. The ceremony ensures the preservation and continuity
+              of a rich cultural heritage for future generations.During the
+              Seren Taun ceremony, Sundanese people perform various Sundanese
+              traditional arts, such as jaipongan dance, pencak silat, and
+              music. The ceremony is a way for the Sundanese people to preserve
+              and introduce their culture to young people.
+            </p>
+          </div>
+        </div>
+        <div class="position-relative description-image w-100 mb-5">
+          <img
+            class="object-fit-cover img-fluid w-100"
+            src="../assets/images/history/histori3.webp"
+            alt="history"
+          />
+        </div>
+
+        <div class="liner"></div>
+        <div
+          class="section-description d-flex w-100 justify-content-between my-5"
+          id="clothes"
+        >
+          <div class="description-title">
+            <h2>Clothes that are often worn at Seren Taun</h2>
+          </div>
+          <div class="description-paragraf">
+            <p>
+              Kampret is the most common traditional Sundanese clothing worn at
+              the Seren Taun ceremony. Kampret is usually made of batik or plain
+              cloth. Kampret is usually white or black, which symbolizes purity
+              and simplicity. Kampret has a simple cut, with long sleeves and a
+              round collar. Kampret is usually equipped with buttons or a belt.
+              Kampret is a loose-fitting garment that hangs down to the knees.
+              It is usually made of a single piece of cloth that is sewn
+              together at the shoulders and sides. Kampret symbolizes purity and
+              simplicity. The white or black color of the kampret symbolizes
+              purity. The simple cut of the kampret symbolizes simplicity.
+              Kampret is a traditional Sundanese garment that has been worn for
+              centuries. It is believed to have originated from the Kingdom of
+              Sunda, which ruled much of western Java from the 13th to the 16th
+              centuries.
+            </p>
+            <div class="d-flex caption-btn">
+              <p>
+                Learn more about kampret, the traditional Sundanese garment that
+                is rich in meaning.
+              </p>
+              <svg
+                class="hero-arrow"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="ArrowCircleDownLeft-r">
+                  <g id="Vector">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15 2.8125C15 2.8125 17.4789 2.8125 19.7442 3.77064C19.7442 3.77064 21.9315 4.69579 23.6179 6.38214C23.6179 6.38214 25.3042 8.06848 26.2294 10.2558C26.2294 10.2558 27.1875 12.5211 27.1875 15C27.1875 15 27.1875 17.4789 26.2294 19.7442C26.2294 19.7442 25.3042 21.9315 23.6179 23.6179C23.6179 23.6179 21.9315 25.3042 19.7442 26.2294C19.7442 26.2294 17.4789 27.1875 15 27.1875C15 27.1875 12.5211 27.1875 10.2558 26.2294C10.2558 26.2294 8.06848 25.3042 6.38214 23.6179C6.38214 23.6179 4.69579 21.9315 3.77064 19.7442C3.77064 19.7442 2.8125 17.4789 2.8125 15C2.8125 15 2.8125 12.5211 3.77064 10.2558C3.77064 10.2558 4.69579 8.06848 6.38214 6.38214C6.38214 6.38214 8.06848 4.69579 10.2558 3.77064C10.2558 3.77064 12.5211 2.8125 15 2.8125ZM15 4.6875C15 4.6875 12.9013 4.6875 10.9862 5.49752C10.9862 5.49752 9.13571 6.28021 7.70796 7.70796C7.70796 7.70796 6.28021 9.13571 5.49752 10.9862C5.49752 10.9862 4.6875 12.9013 4.6875 15C4.6875 15 4.6875 17.0987 5.49752 19.0138C5.49752 19.0138 6.28021 20.8643 7.70796 22.292C7.70796 22.292 9.13571 23.7198 10.9862 24.5025C10.9862 24.5025 12.9013 25.3125 15 25.3125C15 25.3125 17.0987 25.3125 19.0138 24.5025C19.0138 24.5025 20.8643 23.7198 22.292 22.292C22.292 22.292 23.7198 20.8643 24.5025 19.0138C24.5025 19.0138 25.3125 17.0987 25.3125 15C25.3125 15 25.3125 12.9013 24.5025 10.9862C24.5025 10.9862 23.7198 9.13571 22.292 7.70796C22.292 7.70796 20.8643 6.28021 19.0138 5.49752C19.0138 5.49752 17.0987 4.6875 15 4.6875Z"
+                      fill="#1C1C1C"
+                    />
+                    <path
+                      d="M11.7188 19.2188H17.3438C17.8615 19.2188 18.2812 18.799 18.2812 18.2812C18.2812 17.7635 17.8615 17.3438 17.3438 17.3438H12.6562V12.6562C12.6562 12.1385 12.2365 11.7188 11.7188 11.7188C11.201 11.7188 10.7812 12.1385 10.7812 12.6562V18.2812C10.7812 18.799 11.201 19.2188 11.7188 19.2188Z"
+                      fill="#1C1C1C"
+                    />
+                    <path
+                      d="M18.9438 12.382C19.1196 12.2062 19.2188 11.9674 19.2188 11.7188C19.2188 11.4701 19.12 11.2317 18.9442 11.0558L18.9361 11.0478C18.761 10.8772 18.5257 10.7812 18.2812 10.7812C18.0326 10.7812 17.7942 10.88 17.6183 11.0558L11.0562 17.618C10.8804 17.7938 10.7812 18.0326 10.7812 18.2812C10.7812 18.2963 10.7816 18.3113 10.7823 18.3263C10.7935 18.5591 10.891 18.7794 11.0558 18.9442C11.2317 19.12 11.4701 19.2188 11.7188 19.2188C11.9674 19.2188 12.2058 19.12 12.3817 18.9442L18.9438 12.382Z"
+                      fill="#1C1C1C"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+
+            <div class="mt-3">
+              <a href="/pages/ceremony.html" class="custom-btn">
+                Read More <i class="icon fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="position-relative description-image w-100">
+          <img
+            class="object-fit-cover img-fluid w-100"
+            src="../assets/images/history/histori4.webp"
+            alt="history"
+          />
+        </div>
+      </div>
     </section>
 
-
+    <!-- footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div
+          class="d-flex justify-content-center align-items-center gap-3 mb-3"
+        >
+          <a
+            href="https://instagram.com/smkn_04kng"
+            class="text-white link-social"
+          >
+            <i data-feather="instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/smkn4kng"
+            class="text-white link-social"
+          >
+            <i data-feather="facebook"></i>
+          </a>
+        </div>
+        <p class="text-center text-white">
+          &copy; 2023 Copyright Seren Taun - All Right Reversed.
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -303,28 +459,41 @@
     <!-- custom js -->
     <script src="../assets/js/nav.js"></script>
     <script>
-        const text = new SplitType(".custom-hero-title-d");
-        gsap.to(".custom-hero-title-d", {
-            delay: 0.3,
-            opacity: 1
-        })
-        gsap.to(".char", {
-            y: 0,
-            stagger: 0.05,
-            delay: 0.3,
-            duration: 0.09,
-        });
-        gsap.to(".img-thumb-history", {
-            delay: 0.35,
-            opacity: 1,
-            ease: "power2.out"
-        })
-        gsap.to(".custom-bg-history", {
-            delay: 0.5,
-            opacity: 1,
-            ease: "power2.in"
-        })
+        new WOW().init();
     </script>
-</body>
-
+    <script>
+        const preload_text = new SplitType("#preload h1");
+  
+        gsap.to(".char", {
+          y: 0,
+          stagger: 0.05,
+          delay: 0.1,
+          duration: 0.2,
+        });
+      </script>
+      <script src="../assets/js/preload.js"></script>
+    <script>
+      const text = new SplitType(".custom-hero-title-d");
+      gsap.to(".custom-hero-title-d", {
+        delay: 0.3,
+        opacity: 1,
+      });
+      gsap.to(".char", {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.3,
+        duration: 0.09,
+      });
+      gsap.to(".img-thumb-history", {
+        delay: 0.35,
+        opacity: 1,
+        ease: "power2.out",
+      });
+      gsap.to(".custom-bg-history", {
+        delay: 0.5,
+        opacity: 1,
+        ease: "power2.in",
+      });
+    </script>
+  </body>
 </html>
