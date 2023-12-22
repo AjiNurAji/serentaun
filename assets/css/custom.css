@@ -335,6 +335,7 @@ a {
   font-size: 70px;
   color: var(--color-white);
   line-height: normal;
+  opacity: 0;
 }
 
 #preload .char {

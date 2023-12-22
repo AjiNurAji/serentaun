@@ -160,8 +160,13 @@
       </button>
     </nav>
 
-    <section class="vh-100 d-flex justify-content-center align-items-center w-100" id="preload">
-      <div class="bg-wrapper h-100 d-flex justify-content-center flex-column gap-2 align-items-center w-100">
+    <section
+      class="vh-100 d-flex justify-content-center align-items-center w-100"
+      id="preload"
+    >
+      <div
+        class="bg-wrapper h-100 d-flex justify-content-center flex-column gap-2 align-items-center w-100"
+      >
         <h1 class="font-poppins-700 overflow-hidden">Kuningan</h1>
         <p class="loading text-white wow fadeInUp">Loading...</p>
       </div>
@@ -220,11 +225,19 @@
     <!-- footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
-          <a href="https://instagram.com/smkn_04kng" class="text-white link-social">
+        <div
+          class="d-flex justify-content-center align-items-center gap-3 mb-3"
+        >
+          <a
+            href="https://instagram.com/smkn_04kng"
+            class="text-white link-social"
+          >
             <i data-feather="instagram"></i>
           </a>
-          <a href="https://www.facebook.com/smkn4kng" class="text-white link-social">
+          <a
+            href="https://www.facebook.com/smkn4kng"
+            class="text-white link-social"
+          >
             <i data-feather="facebook"></i>
           </a>
         </div>
@@ -245,17 +258,24 @@
     <script src="https://unpkg.com/split-type"></script>
 
     <!-- custom js -->
+    <script>
+      feather.replace();
+    </script>
     <script src="../assets/js/nav.js"></script>
     <script>
       new WOW().init();
     </script>
     <script>
       const preload_text = new SplitType("#preload h1");
-
+      gsap.to("#preload h1", {
+        opacity: 1,
+        duration: 0.0,
+      });
       gsap.to(".char", {
         y: 0,
         stagger: 0.05,
         delay: 0.1,
+        opacity: 1,
         duration: 0.2,
       });
     </script>

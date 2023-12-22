@@ -414,18 +414,25 @@
     <!-- custom js -->
     <script src="../assets/js/nav.js"></script>
     <script>
+        feather.replace();
+      </script>
+    <script>
       new WOW().init();
     </script>
     <script>
-      const preload_text = new SplitType("#preload h1");
-
-      gsap.to(".char", {
-        y: 0,
-        stagger: 0.05,
-        delay: 0.1,
-        duration: 0.2,
-      });
-    </script>
+        const preload_text = new SplitType("#preload h1");
+        gsap.to("#preload h1", {
+          opacity: 1,
+          duration: 0.0,
+        });
+        gsap.to(".char", {
+          y: 0,
+          stagger: 0.05,
+          delay: 0.1,
+          opacity: 1,
+          duration: 0.2,
+        });
+      </script>
     <script src="../assets/js/preload.js"></script>
     <script>
       const text = new SplitType(".custom-hero-title-d");
