@@ -403,7 +403,13 @@
         duration: 0.2,
       });
     </script>
-    <script src="./assets/js/preload.js"></script>
+    <script>
+      const preload = document.getElementById("preload");
+
+      setTimeout(() => {
+        preload.classList.add("hidden");
+      }, 2000);
+    </script>
     <script>
       const text = new SplitType(".title-hero h1");
 
