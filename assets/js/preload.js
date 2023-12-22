@@ -1,6 +1,9 @@
 const preload = document.getElementById("preload");
 
 setTimeout(() => {
-  document.body.classList.remove("overflow-y-hidden")
+  scrollTo({
+    top: 0,
+    smooth: true,
+  });
   preload.classList.add("hidden");
 }, 1500);

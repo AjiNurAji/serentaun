@@ -21,6 +21,10 @@ button {
   border: none !important;
 }
 
+section {
+  overflow-x: hidden !important;
+}
+
 h1,
 p {
   margin: 0 !important;
