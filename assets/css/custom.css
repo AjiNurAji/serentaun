@@ -751,6 +751,15 @@ a {
   color: var(--color-green) !important;
 }
 
+#team .title .char,
+#splitting .char {
+  transform: translateY(250px);
+  -webkit-transform: translateY(250px);
+  -moz-transform: translateY(250px);
+  -ms-transform: translateY(250px);
+  -o-transform: translateY(250px);
+}
+
 @media (min-width: 1800px) {
   .people-section h2 {
     font-size: 7em;

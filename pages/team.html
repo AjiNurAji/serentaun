@@ -99,7 +99,7 @@
           ></div>
           <div
             class="tiles__line-img tiles__line-img--large"
-            style="background-image: url(./assets/images/acara/3.webp)"
+            style="background-image: url(../assets/images/acara/3.webp)"
           ></div>
           <div
             class="tiles__line-img"
@@ -162,9 +162,14 @@
       </button>
     </nav>
 
-    <section class="vh-100 d-flex justify-content-center align-items-center w-100" id="preload">
-      <div class="bg-wrapper h-100 d-flex justify-content-center flex-column gap-2 align-items-center w-100">
-        <h1 class="font-poppins-700 overflow-hidden">Kuningan</h1>
+    <section
+      class="vh-100 d-flex justify-content-center align-items-center w-100"
+      id="preload"
+    >
+      <div
+        class="bg-wrapper h-100 d-flex justify-content-center flex-column gap-2 align-items-center w-100"
+      >
+        <h1 class="overflow-hidden">Kuningan</h1>
         <p class="loading text-white wow fadeInUp">Loading...</p>
       </div>
     </section>
@@ -180,13 +185,14 @@
         class="container d-flex justify-content-center align-items-start gap-3 py-5"
       >
         <div class="title">
-          <h1 class="font-kaisei-700 text-dark text-capitalize">We are team</h1>
+          <h1 class="font-kaisei-700 text-dark text-capitalize overflow-hidden">We are team</h1>
         </div>
         <div
           class="text d-flex flex-column justify-content-center align-items-start gap-5 mt-5"
         >
           <div
-            class="d-flex justify-content-center align-items-start gap-3 border-bottom py-3"
+            class="d-flex justify-content-center align-items-start gap-3 border-bottom py-3 wow bounceInUp"
+            data-wow-delay="1.5s"
           >
             <div class="images">
               <div class="image-wrapper">
@@ -208,7 +214,8 @@
             </div>
           </div>
           <div
-            class="d-flex justify-content-center align-items-start gap-3 border-bottom py-3"
+            class="d-flex justify-content-center align-items-start gap-3 border-bottom py-3 wow bounceInUp"
+            data-wow-delay="1.6s"
           >
             <div class="images">
               <div class="image-wrapper">
@@ -230,7 +237,8 @@
             </div>
           </div>
           <div
-            class="d-flex justify-content-center align-items-start gap-3 border-bottom py-3"
+            class="d-flex justify-content-center align-items-start gap-3 border-bottom py-3 wow bounceInUp"
+            data-wow-delay="1.7s"
           >
             <div class="images">
               <div class="image-wrapper">
@@ -302,7 +310,7 @@
         opacity: 1,
         duration: 0.0,
       });
-      gsap.to(".char", {
+      gsap.to("#preload .char", {
         y: 0,
         stagger: 0.05,
         delay: 0.1,
@@ -310,6 +318,16 @@
         duration: 0.2,
       });
     </script>
-    <script src="../assets/js/preload.js"></script>
+      <script src="../assets/js/preload.js"></script>
+    <script>
+      const text = new SplitType("#team .title h1");
+      gsap.to("#team .char", {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.3,
+        opacity: 1,
+        duration: 0.2,
+      });
+    </script>
   </body>
 </html>
