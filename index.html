@@ -212,14 +212,14 @@
             <div
               class="d-flex w-100 position-absolute justify-content-between align-items-start text"
             >
-              <div class="left-text">
+              <div class="left-text wow bounceInRight" data-wow-delay="2.5">
                 <p class="font-kaisei-700 text-white">Let's Explore</p>
                 <p class="font-body text-light">Cigugur, Kuningan</p>
                 <p class="font-body text-light" style="font-size: 10px">
                   by SMKN 4 Kuningan
                 </p>
               </div>
-              <div class="right-text">
+              <div class="right-text wow bounceInLeft" data-wow-delay="2.5">
                 <p class="font-kaisei text-white">
                   This is a seren taun tradition carried out in the Cigugur
                   area, Kuningan district
@@ -251,8 +251,8 @@
         <div
           class="description d-flex flex-column justify-content-center align-items-start gap-3"
         >
-          <h2 class="font-kaisei fw-mediun">History of Seren Taun</h2>
-          <p class="font-body mb-2">
+          <h2 class="font-kaisei fw-mediun wow bounceInLeft">History of Seren Taun</h2>
+          <p class="font-body mb-2 wow bounceInLeft">
             The history of Seren Taun can be traced back to a time before the
             Sundanese people knew Islam. The ceremony is a legacy from their
             ancestors that is still preserved today.Initially, Seren Taun was
@@ -260,7 +260,7 @@
             time, the ceremony began to be performed by the general public,
             including urban dwellers.
           </p>
-          <div class="font-body border-bottom pb-3">
+          <p class="font-body border-bottom pb-3 bounceInLeft">
             In the 15th century, Seren Taun became an official ceremony of the
             Sundanese Kingdom. The ceremony was held annually to pray to Dewi
             Sri, the rice goddess in Sundanese belief, for a bountiful
@@ -269,7 +269,7 @@
             people.After Indonesia gained independence, Seren Taun was again
             allowed to be held. The ceremony has become increasingly popular and
             is one of the tourist attractions in the Kuningan Regency.
-          </div>
+          </p>
           <a href="./pages/history.html" class="link-to"
             >Read More <i class="icon fa-solid fa-arrow-right"></i
           ></a>
@@ -383,10 +383,10 @@
     <script>
       const Scrolling = () => {
         if (scrollY > 0) {
-          document.getElementById("button-menu").classList.add("filter-menu");
+          document.querySelector(".button-menu").classList.add("filter-menu");
         } else {
           document
-            .getElementById("button-menu")
+            .querySelector(".button-menu")
             .classList.remove("filter-menu");
         }
       };
@@ -410,7 +410,7 @@
       gsap.to(".char", {
         y: 0,
         stagger: 0.05,
-        delay: 0.3,
+        delay: 0.4,
         duration: 0.2,
       });
     </script>
