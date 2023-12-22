@@ -764,6 +764,10 @@ a {
 }
 
 @media (max-width: 768px) {
+  #team .container .text {
+    padding: 0 20px !important;
+  }
+
   #gallery .container {
     margin-top: 1.5rem !important;
   }
@@ -811,6 +815,10 @@ a {
 }
 
 @media (max-width: 992px) {
+  #team .container {
+    flex-direction: column !important;
+  }
+
   #hero .wrapper {
     flex-direction: column !important;
     gap: 20px;
